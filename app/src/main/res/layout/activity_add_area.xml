@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddAreaActivity">
+
+    <Spinner
+        android:id="@+id/myspinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"></Spinner>
+
+    <EditText
+        android:id="@+id/add_area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/black_border"
+        android:gravity="center"
+        android:hint="Area"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/addarea_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/bungee"
+        android:onClick="btnAddData"
+        android:text="Add Area"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEmpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/bungee"
+            android:text="Welcome"
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:transitionName="logo_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="SignUp to get help"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="logo_desc"
+            app:fontFamily="@font/antic" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/boy" />
+
+        <EditText
+            android:id="@+id/emp_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/emp_aadhar_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:hint="Aadhar No" />
+
+        <EditText
+            android:id="@+id/emp_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:hint="Phone" />
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:hint="Rate" />-->
+
+        <Spinner
+            android:id="@+id/myspinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"></Spinner>
+
+        <Button
+            android:id="@+id/addemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/bungee"
+            android:onClick="addemp"
+            android:text="Add emp"
+            android:textColor="@color/colorPrimary"
+            android:transitionName="trans_next_btn" />
+
+
+    </LinearLayout>
+
+</ScrollView>
